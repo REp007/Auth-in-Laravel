@@ -81,5 +81,19 @@ in this file view
 finally enter this route will send email for you address
 > `http:/localhost:8000/send-email`
 
+### for Tp2 /notify
+i guess you have already config you app for the email
+so this time all files are ready for you
+you should just search for the user that have your email for test it 
+in this file
+[Notification controller](app\Http\Controllers\testNotifyCon.php)
 
+or you can notify all users using this code 
+```php
+    public function testN(){
+        $users = User::get();
+        Notification::send($users, new test());
+    }
+```
 
+> `http:/localhost:8000/notify`
