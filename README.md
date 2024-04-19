@@ -97,3 +97,12 @@ or you can notify all users using this code
 ```
 
 > `http:/localhost:8000/notify`
+
+### for Tp3 / Events / Listening
+
+> just try to create new user 
+> and this user will had an email when he register
+> if you have some trouble for test email service in your app
+> go to [mailtrap.io](https://mailtrap.io)
+> and create an account and get the SMTP credentials
+> and change the .env file with the new credentials

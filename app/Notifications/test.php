@@ -35,7 +35,7 @@ class test extends Notification
     public function toMail(object $notifiable): MailMessage
     {
         return (new MailMessage)
-                    ->line('test Notifiation service')
+                    ->line('test Notifiation service using event and listener')
                     ->action('Notification Action', url('/'))
                     ->line('Thank you for using our application!');
     }
