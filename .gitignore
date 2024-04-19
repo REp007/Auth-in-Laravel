@@ -17,3 +17,12 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+
+# ignore some files
+database/migration
+database/migration/2024_04_04_155146_create_clubs_table.php
+database/migration/2024_04_04_155200_create_activites_table.php
+database/migration/2024_04_04_155200_create_activites_table.php
+
+

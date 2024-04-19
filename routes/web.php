@@ -5,8 +5,8 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\PostController;
-
-
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\testNotifyCon;
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
@@ -31,3 +31,15 @@ require __DIR__.'/auth.php';
 
 
 Route::resource('/post', PostController::class);
+
+
+
+
+// Tp 1
+
+Route::get('/send-email', [OrderController::class, 'sendEmail']);
+
+// Tp 2
+Route::get('/notif', [testNotifyCon::class, 'testN']);
+
+// Tp 3 soon ...
