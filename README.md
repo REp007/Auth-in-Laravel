@@ -27,7 +27,7 @@ php artisan migrate
 ```
 2. Also Seed some Fake Data into you Tables using this commande:
 ```bash 
-php artisan db:seed
+php artisan db:seed --class=PostSeeder
 ```
 
 3. for Lunch The App use this commande to create listen port
